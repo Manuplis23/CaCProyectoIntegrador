@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    font-weight: 400;
+}
+.cuerpo{
+    padding: 3% 10%;
+    background-color: rgba(153, 25, 25, 0.8);
+}
+.section-tittle{
+    text-align: center;
+    margin-top: 20px;
+}
+.section-tittle h2{
+    font-family: bebas neue;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.section-tittle p{
+    font-family: bebas neue;
+    font-size: 20px;
+}
+#service{
+    padding: 50px 0;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 2fr) ); 
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.single-services{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.single-services img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: heigth 0.5s;
+    color: #fff;
+    height: 0;
+    background: linear-gradient(transparent 10%,rgba(255,255,255,255,0.8) 35%);
+    border-radius: 15px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.overlay h3{
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-family: bebas neue;
+    font-size: 25px;
+}
+.overlay a{
+    text-decoration: none;
+    background: rgb(49, 49, 49);
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.single-services:hover img{ 
+    transform: scale(1.4);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+} 
+.single-services:hover .overlay{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
