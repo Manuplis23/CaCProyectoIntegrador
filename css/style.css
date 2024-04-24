@@ -3,13 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: poppins;
     font-weight: 400;
 }
+.navbar{
+    background-color: rgba(53, 53, 53, 0.894) !important ;
+    font-size: 1.2em !important ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important ;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
+.btn-outline-primary:hover{
+    background-color: rgba(37, 88, 183, 0.595) !important;
+}
+
+.icon-container {
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon-container:hover {
+    transform: rotateY(180deg); /* Gira 180 grados en el eje Y al pasar el mouse */
+}
+.dropdown-menu{
+    background-color:  rgba(216, 214, 214, 0.901) !important;
+}
+.dropdown-item:hover{
+    background-color: rgba(37, 88, 183, 0.595) !important;
+}
+
+
 .cuerpo{
     padding: 3% 10%;
-    background-color: rgba(153, 25, 25, 0.8);
+    background-color: rgba(37, 88, 183, 0.8);
 }
 .section-tittle{
     text-align: center;
