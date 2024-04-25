@@ -9,6 +9,11 @@ body{
     font-family: poppins;
     font-weight: 400;
 }
+.header{
+    position: fixed; 
+    width: 100%; 
+    z-index: 100;
+}
 .navbar{
     background-color: rgba(53, 53, 53, 0.894) !important ;
     font-size: 1.2em !important ;
@@ -21,12 +26,13 @@ body{
     background-color: rgba(37, 88, 183, 0.595) !important;
 }
 
-.icon-container {
+.icon-container  {
     transition: transform 0.5s ease-in-out;
+   
 }
-
 .icon-container:hover {
     transform: rotateY(180deg); /* Gira 180 grados en el eje Y al pasar el mouse */
+    
 }
 .dropdown-menu{
     background-color:  rgba(216, 214, 214, 0.901) !important;
@@ -179,6 +185,7 @@ h1{
 .icon-link img {
     transition: transform 0.3s ease-in-out !important; /* Transición de transformación */
 }
+
 
 .icon-link:hover img {
     transform: scale(1.2) !important; /* Aumenta el tamaño del icono al hacer hover */
