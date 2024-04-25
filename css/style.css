@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -72,6 +73,18 @@ h1{
 }
 /* Animación de desplazamiento del carrusel */
 
+/* Estilo Boton */
+#boton{
+    background-color: rgba(37, 88, 183, 0.8);
+}
+#boton-arriba{
+    left: 95%;
+    border-radius: 50%;
+    position: sticky;
+}
+#boton a{
+    text-decoration: none;
+}
 
 /*Estilo de la parte de main*/
 .cuerpo{
