@@ -75,12 +75,13 @@ h1{
 
 /* Estilo Boton */
 #boton{
-    background-color: rgba(37, 88, 183, 0.8);
+    background-color: rgba(37, 88, 183, 0.8) !important;
 }
 #boton-arriba{
     left: 95%;
     border-radius: 50%;
     position: sticky;
+    margin-bottom: 10px;
 }
 #boton a{
     text-decoration: none;
