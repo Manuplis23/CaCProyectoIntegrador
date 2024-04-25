@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,6 +14,12 @@ body{
     font-size: 1.2em !important ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important ;
 }
+
+.navbar-toggler-icon {
+
+    background-color: rgb(54, 113, 149);
+}
+
 .nav-link{
     color: rgb(255, 255, 255) !important;
 }
@@ -34,7 +41,60 @@ body{
     background-color: rgba(37, 88, 183, 0.595) !important;
 }
 
+/*Estilo de la parte de tendencias*/
+.ofertas {
+    padding: 60px 0;
+    background-color:  rgba(17, 58, 134, 0.809);
+   translate: 0 0 1;
+   font-size: 1.4em;
+}
+h1{
+    font-size: 2.1em;
+}
+.card {
+    margin-bottom: 30px;
+}
 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+.ofertas .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.ofertas .card {
+    margin: 0 10px;
+    width: 250px; /* Ajusta el ancho de las tarjetas según sea necesario */
+}
+/* Animación de desplazamiento del carrusel */
+
+/* Estilo Boton */
+#boton{
+    left: 95%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(37, 88, 183, 0.8);
+}
+#boton-arriba{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#boton a{
+    text-decoration: none;
+}
+
+/*Estilo de la parte de main*/
 .cuerpo{
     padding: 3% 10%;
     background-color: rgba(37, 88, 183, 0.8);
@@ -46,7 +106,7 @@ body{
 .section-tittle h2{
     font-family: bebas neue;
     font-size: 40px;
-    text-decoration: underline;
+    /* text-decoration:overline; */
 }
 .section-tittle p{
     font-family: bebas neue;
@@ -116,3 +176,62 @@ body{
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
 }
+
+/* Estilos personalizados para el footer */
+.footer {
+    background-color: rgb(41, 38, 38)  !important;
+}
+
+/* Estilos para la animación de los iconos */
+.icon-link img {
+    transition: transform 0.3s ease-in-out !important; /* Transición de transformación */
+}
+
+.icon-link:hover img {
+    transform: scale(1.2) !important; /* Aumenta el tamaño del icono al hacer hover */
+}
+
+
+/* Responsive para tablets */
+@media(max-width: 768px){
+
+    .section-tittle h2{
+        font-family: bebas neue;
+        font-size: 30px;
+       /* text-decoration:overline; */
+    }
+
+    .single-services img{
+        width: 100%;
+        border-radius: 15px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
+    .single-services{
+        border-radius: 15px;
+        position: relative;
+        text-align:center;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    #boton{
+        
+        position: sticky;
+        
+        
+        
+    }
+    #boton-arriba{
+        border-radius: 50%;
+        margin-bottom: 10px;
+        width: 40px;
+        top: 0;
+        left: 95%;
+    }
+}
+
