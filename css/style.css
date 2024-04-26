@@ -247,6 +247,21 @@ h2{
     transform: scale(1.2) !important; /* Aumenta el tamaño del icono al hacer hover */
 }
 
+/* css para el registro e inicio de sesion */
+
+.container_registro{
+    background-color: rgba(37, 88, 183, 0.8);
+    border: #141414;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label {
+    color: white;
+}
+.text-center{
+    color: white;
+}
 
 /* Responsive para tablets */
 @media(max-width: 768px){
