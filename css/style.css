@@ -9,6 +9,11 @@ body{
     font-family: poppins;
     font-weight: 400;
 }
+.header{
+    position: fixed; 
+    width: 100%; 
+    z-index: 100;
+}
 .navbar{
     background-color: rgba(53, 53, 53, 0.894) !important ;
     font-size: 1.2em !important ;
@@ -81,14 +86,13 @@ h1{
 
 /* Estilo Boton */
 #boton{
-    left: 95%;
-    position: sticky;
-    top: 0;
     background-color: rgba(37, 88, 183, 0.8);
 }
 #boton-arriba{
     border-radius: 50%;
     margin-bottom: 10px;
+    position: sticky;
+    left: 95%;
 }
 #boton a{
     text-decoration: none;
