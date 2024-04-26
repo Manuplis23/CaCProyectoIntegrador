@@ -16,15 +16,13 @@ body{
 }
 .navbar{
     background-color: rgba(53, 53, 53, 0.894) !important ;
-    font-size: 1.2em !important ;
+    font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important ;
 }
-
-.navbar-toggler-icon {
-
-    background-color: rgb(54, 113, 149);
+.navbar-nav {
+    display: flex;
+    align-items: center;
 }
-
 .nav-link{
     color: rgb(255, 255, 255) !important;
 }
@@ -46,36 +44,90 @@ body{
     background-color: rgba(37, 88, 183, 0.595) !important;
 }
 
-/*Estilo de la parte de tendencias*/
+/*Estilo de la parte de tendencias para card y demas*/
 .ofertas {
-    padding: 60px 0;
+    padding: 60px 0 ;
     background-color:  rgba(17, 58, 134, 0.809);
    translate: 0 0 1;
    font-size: 1.4em;
 }
-h1{
+.texth2{
+    padding-top: 22px;
+}
+h2{
     font-size: 2.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .card {
     margin-bottom: 30px;
+    border-style:hidden;
 }
 
 .card-img-top {
-    height: 200px;
+    width: 100%; /* Ancho al 100% para llenar la tarjeta */
+  height: 350px;
     object-fit: cover;
+    border-style:hidden;
 }
 
 .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1.10rem;
+    font-weight:bolder; 
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #141414;
+    font-weight: bolder;
+}
+.card-body{
+    background-color: #f8f6f6f5;
+    border-radius: 10px;
 }
 .ofertas .carousel-item {
     display: flex;
     justify-content: center;
+}
+.btn-secondary{
+    background: #f8f6f6f5 !important; /* color de fondo */
+    color: #191818; /* color de fuente */
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 2px solid  #1e1e1e; /* tamaño y color de borde */
+    padding: 8px 12px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+.btn-secondary:hover{
+    color: #191818;
+    border: 2px solid  #1e1e1e;
+}
+.btn-secondary::after {
+    content: "";
+    background:  rgba(37, 88, 183, 0.8); /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+.btn-secondary:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .ofertas .card {
@@ -84,7 +136,7 @@ h1{
 }
 /* Animación de desplazamiento del carrusel */
 
-/* Estilo Boton */
+/* Estilo del Boton */
 #boton{
     background-color: rgba(37, 88, 183, 0.8);
 }
